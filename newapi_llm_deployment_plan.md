@@ -616,7 +616,7 @@ services:
     environment:
       # ... 同上所有配置 ...
       - NODE_TYPE=slave
-      - FRONTEND_BASE_URL=http://master-node-ip:3000  # Slave 前端重定向到 Master
+      - FRONTEND_BASE_URL=http://master-node-ip:3000  # 非必须。Slave 前端页面重定向到 Master（API 请求不受影响）
     # 可修改 ports 避免冲突：
     ports:
       - "3001:3000"
@@ -680,5 +680,5 @@ server {
 | 处理 API 请求 | ✅ | ✅ |
 | 数据库迁移 | ✅ | ❌ (跳过) |
 | 后台任务（Midjourney 等） | ✅ | ❌ (跳过) |
-| 前端页面 | ✅ | ❌ (重定向到 FRONTEND_BASE_URL) |
-| Admin Dashboard | ✅ | ❌ (重定向) |
+| 前端页面 | ✅ | ✅（未设 FRONTEND_BASE_URL 时本地提供，设了则 301 重定向到 Master）|
+| Admin Dashboard | ✅ | 同上 |
