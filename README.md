@@ -402,7 +402,9 @@ docker run --name new-api -d --restart always \
 
 </details>
 
-### ⚠️ Multi-machine Deployment Considerations
+### ⚠️ Multi-Node Deployment
+
+For production horizontal scaling, a shared external database and Redis are required. See [docker-compose-mysql.yml](docker-compose-mysql.yml) for a complete production-grade compose template.
 
 > [!WARNING]
 > - All nodes must use the same primary database and the same `SESSION_SECRET`; otherwise Access Tokens, refresh sessions, and temporary authentication flows cannot be verified consistently.
@@ -419,6 +421,12 @@ The database is authoritative for login Sessions and for the per-user active/iss
 A shorter `SYNC_FREQUENCY` reduces the independent-Redis staleness window but causes one additional primary-key Session lookup per active SID, per node, per TTL. These guarantees make Session authentication bounded-stale across the supported topologies; rate limits and other Redis-backed control-plane caches remain topology-dependent.
 
 See [User authentication and login sessions](./docs/authentication.md) for the token, Origin-check and PAT contracts.
+
+> [!TIP]
+> **Node role configuration:**
+> - Only **one master node** (default when `NODE_TYPE` is unset) — handles DB migrations and background tasks
+> - All other nodes set `NODE_TYPE=slave` — skip DB migrations and background tasks
+> - Place a load balancer (Nginx/HAProxy) in front of all nodes' port `3000`
 
 ### 🔄 Channel Retry and Cache
 
