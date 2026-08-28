@@ -158,6 +158,8 @@ docker run --name new-api -d --restart always \
 
 📖 For more deployment methods, please refer to [Deployment Guide](https://docs.newapi.pro/en/docs/installation)
 
+🇨🇳 中文用户请看 [快速部署与功能速览](docs/QUICKSTART.md)（3 分钟试用 → 生产多节点上线 → 功能索引）
+
 ---
 
 ## 📚 Documentation
@@ -177,6 +179,15 @@ docker run --name new-api -d --restart always \
 | 📡 API Documentation | [API Documentation](https://docs.newapi.pro/en/docs/api) |
 | ❓ FAQ | [FAQ](https://docs.newapi.pro/en/docs/support/faq) |
 | 💬 Community Interaction | [Communication Channels](https://docs.newapi.pro/en/docs/support/community-interaction) |
+
+**中文自建文档（本仓库）：**
+
+| 文档 | 说明 |
+|------|------|
+| 🚀 快速部署与功能速览 | [docs/QUICKSTART.md](docs/QUICKSTART.md) — 入口文档：试用到上线的完整路径 + 功能一表索引 |
+| 📊 产品能力全景 | [docs/PRODUCT_CAPABILITIES.md](docs/PRODUCT_CAPABILITIES.md) — 15 个能力域详解 |
+| 💰 计费与定价模型 | [docs/BILLING_MODEL.md](docs/BILLING_MODEL.md) — 价格链、倍率公式与踩坑清单 |
+| 🔧 计费异常排查 | [docs/BILLING_TROUBLESHOOTING.md](docs/BILLING_TROUBLESHOOTING.md) — 扣费问题排查 Runbook |
 
 ---
 
