@@ -12,6 +12,7 @@
 | [PRODUCT_CAPABILITIES.md](PRODUCT_CAPABILITIES.md) — 产品能力全景 | 想全面了解系统 15 个能力域（架构/渠道/计费/权限/运维…） |
 | [BILLING_MODEL.md](BILLING_MODEL.md) — 计费与定价模型速查 | 搞懂价格链、倍率公式、三种折扣玩法、易踩坑清单 |
 | [BILLING_TROUBLESHOOTING.md](BILLING_TROUBLESHOOTING.md) — 计费异常排查 Runbook | 扣费比预期多/少、展示价与扣费不一致等场景 |
+| [CHANNEL_AFFINITY_GUIDE.md](CHANNEL_AFFINITY_GUIDE.md) — 多渠道高可用与缓存加速 | 多套餐/多供应商同模型做负载均衡 + 故障切换 + 会话粘性 |
 | [../newapi_llm_deployment_plan.md](../newapi_llm_deployment_plan.md) — 完整部署方案 | 需要整体部署架构与规划细节（含多节点架构章节） |
 
 ---

@@ -188,6 +188,7 @@ docker run --name new-api -d --restart always \
 | 📊 产品能力全景 | [docs/PRODUCT_CAPABILITIES.md](docs/PRODUCT_CAPABILITIES.md) — 15 个能力域详解 |
 | 💰 计费与定价模型 | [docs/BILLING_MODEL.md](docs/BILLING_MODEL.md) — 价格链、倍率公式与踩坑清单 |
 | 🔧 计费异常排查 | [docs/BILLING_TROUBLESHOOTING.md](docs/BILLING_TROUBLESHOOTING.md) — 扣费问题排查 Runbook |
+| 🔀 多渠道高可用与缓存加速 | [docs/CHANNEL_AFFINITY_GUIDE.md](docs/CHANNEL_AFFINITY_GUIDE.md) — 渠道亲和配置指南 |
 
 ---
 
