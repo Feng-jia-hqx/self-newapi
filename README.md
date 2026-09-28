@@ -189,6 +189,7 @@ docker run --name new-api -d --restart always \
 | 💰 计费与定价模型 | [docs/BILLING_MODEL.md](docs/BILLING_MODEL.md) — 价格链、倍率公式与踩坑清单 |
 | 🔧 计费异常排查 | [docs/BILLING_TROUBLESHOOTING.md](docs/BILLING_TROUBLESHOOTING.md) — 扣费问题排查 Runbook |
 | 🔀 多渠道高可用与缓存加速 | [docs/CHANNEL_AFFINITY_GUIDE.md](docs/CHANNEL_AFFINITY_GUIDE.md) — 渠道亲和配置指南 |
+| ⏱️ 响应慢诊断与加速 | [docs/LATENCY_DIAGNOSIS_GUIDE.md](docs/LATENCY_DIAGNOSIS_GUIDE.md) — 耗时排障 Runbook：接入层/中转站/上游三段定位（附一键诊断脚本 `docs/scripts/latency_doctor.py`） |
 
 ---
 
